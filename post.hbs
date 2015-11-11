@@ -1,0 +1,46 @@
+{{!< default}}
+
+{{#post}}
+{{#if image}}
+  <header class="post-image" style="background-image: url({{image}})"></header>
+{{/if}}
+<div class="container u-max-full-width">
+
+  <div class="row">
+    <div class="two columns">&nbsp;</div>
+    <div class="eight columns">
+    {{> post-meta}}
+
+    <header class="animated fadeIn" >
+        <div class="container" data-stellar-ratio="0.75">
+
+            {{> title}}
+            {{> sidebar}}
+        </div>
+    </header>
+
+    <div class="push-article">
+{{! Temporary indentation shift for Handlebars issue }}
+{{> content}}
+{{> share}}
+    </div>
+{{> comments}}
+
+
+
+        <!-- <div class="author animated fadeIn clearfix">
+            {{#author}}
+                <img src="{{image}}" alt="{{name}}" />
+                <div class="info">
+                    <a href="{{url}}" class="name">{{name}}</a>
+                    <p class="bio">{{bio}}</p>
+                </div>
+            {{/author}}
+        </div> -->
+
+  </div>
+  <div class="one columns">&nbsp;</div>
+  </div>
+</div>
+</div>
+{{/post}}

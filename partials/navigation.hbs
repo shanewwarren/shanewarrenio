@@ -1,0 +1,39 @@
+<nav class="animated fadeIn navigation">
+    <div class="non-mobile-nav">
+      <div class="u-full-width">
+        <div class="u-pull-left">
+          <a href="{{@blog.url}}" class="text-right sidebar brand">{{@blog.title}}</a>
+        </div>
+
+        <ul class="u-pull-right">
+          {{#foreach navigation}}
+          <li>
+             <a class="nav-link nav-{{slug}}{{#if current}}active nav-current{{/if}}" href="{{url}}/">
+               <span>{{label}}</span>
+             </a>
+          </li>
+          {{/foreach}}
+
+        </ul>
+      </div>
+    </div>
+    <div class="mobile-nav">
+      <div class="container">
+        <div class="row">
+          <a href="{{@blog.url}}"  style="width: 100%; text-align: center; padding:0;" class="sidebar brand">{{@blog.title}}</a>
+        </div>
+        <div class="row">
+          <ul style="padding: 0; margin:0; text-align:center;">
+            {{#foreach navigation}}
+            <li>
+               <a class="nav-link nav-{{slug}}{{#if current}}active nav-current{{/if}}" href="{{url}}/">
+                 <span>{{label}}</span>
+               </a>
+            </li>
+            {{/foreach}}
+
+          </ul>
+        </div>
+      </div>
+    </div>
+</nav>
