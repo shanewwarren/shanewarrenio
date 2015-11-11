@@ -3,8 +3,10 @@
 {{#post}}
 {{#if image}}
   <header class="post-image" style="background-image: url({{image}})"></header>
+{{else}}
+  <header class="post-image" style="height:1px;"></header>
 {{/if}}
-<div class="container u-max-full-width">
+<div class="container u-cf u-max-full-width">
 
   <div class="row">
     <div class="two columns">&nbsp;</div>
