@@ -1,0 +1,47 @@
+<div class="excerpt-post container">
+  <div class="row non-mobile-excerpt">
+    <div class="eight columns">
+      <div class="sample">
+        <div class="title animated fadeInUp">
+          <a class="excerpt-link" href="{{url}}">
+            <h1 style="margin-top:0px; line-height:35px;">{{title}}</h1>
+          </a>
+        </div>
+        {{> sidebar}}
+      </div>
+      <article class="excerpt animated fadeIn {{post_class}}">
+        <p>{{excerpt words="35"}}&hellip;</p>
+      </article>
+    </div>
+    <div class="four columns">
+      {{#if image}}
+      <a href="{{url}}">
+        <div class="excerpt-image  animated fadeIn" style="background-image: url({{image}})"></div>
+      </a>
+      {{/if}}
+    </div>
+  </div>
+
+  <div class="row mobile-excerpt">
+    <div class="four columns" style="margin-bottom: 30px;">
+      {{#if image}}
+      <a href="{{url}}">
+        <div class="excerpt-image  animated fadeIn" style="background-image: url({{image}})"></div>
+      </a>
+      {{/if}}
+    </div>
+    <div class="eight columns">
+      <div class="sample">
+        <div class="title animated fadeInUp">
+          <a class="excerpt-link" href="{{url}}">
+            <h1 style="margin-top:0px; line-height:35px;">{{title}}</h1>
+          </a>
+        </div>
+        {{> sidebar}}
+      </div>
+      <article class="excerpt animated fadeIn {{post_class}}">
+        <p>{{excerpt words="35"}}&hellip;</p>
+      </article>
+    </div>
+  </div>
+</div>
