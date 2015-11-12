@@ -129,8 +129,8 @@ strong {
 }
 
 .excerpt-post {
-	padding-left: 30px;
-	padding-right: 30px;
+	/*padding-left: 30px;
+	padding-right: 30px;*/
 }
 
 .pagination {
@@ -652,8 +652,8 @@ div.non-mobile-nav {
 	}
 
 @media (min-width: 400px) {
-	.container {
-		width:95%;
+	.main-start {
+		width:100%;
 	}
 
 }
